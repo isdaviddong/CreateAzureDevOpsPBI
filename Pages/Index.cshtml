@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1 class="display-4">Add Azure DevOps WorkItem</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="post">
+        <div row="col-6">
+            <label>站台</label>
+            <input name="site" class="form-control" type="text" value="@Model.site" />
+            <label>專案</label>
+            <input name="project" class="form-control" type="text" value="@Model.project" />
+            <label>auth</label>
+            <input name="auth" class="form-control" type="text" value="@Model.auth" />
+
+            <label>PBI Title</label>
+            <input name="title" class="form-control" type="text" value="@Model.title" />
+            <label>PBI Description</label>
+            <textarea name="description" class="form-control" rows="5">@Model.description</textarea>
+        </div>
+        <button class="btn btn-primary" asp-page-handler="AddWorkItem" type="submit">送出</button>
+        <br />
+        <span>@Model.message</span>
+    </form>
+</div>
