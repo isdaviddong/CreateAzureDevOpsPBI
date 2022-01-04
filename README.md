@@ -7,8 +7,8 @@ Create Azure DevOps Work item by C# Code
 
 **請上線這個表單，讓大家好好輸入，乖乖排隊。**
 
-video:
-https://youtu.be/rUYTcc2b3e4
+video: 
+> https://youtu.be/rUYTcc2b3e4
 
 ---
 <img src='https://i.imgur.com/FqlCGqu.png' />
